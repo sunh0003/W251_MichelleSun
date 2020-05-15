@@ -41,7 +41,7 @@ python3 face_detector.py 5.196.95.208
 ## Section 2 Setup IBM Cloud containers 
 ### Section 2.1 Create VM or use jumpbox
 For this homework, we basically used jumpbox (original VM) directly. It is because we don't run any heavy machine learning task on VM. In the Future, especially for final project, it is highly recommended to spin up a separate VM and mount the object storage (bucket) on the separate VM. 
-### Section 2.2 Create object storage and mount bucket on Jumpbox (follow to Lab2 steps)
+### Section 2.2 Create object storage and mount bucket on Jumpbox (follow Lab2 steps)
 Creat a object storage using ibm UI
 download s3fs, bulid and install library
 ```
