@@ -25,6 +25,7 @@ mosquitto_sub -h mosquitto -t <some topic>
 ## Section 2 Setup IBM Cloud containers 
 ### Section 2.1 Create VM or use jumpbox
 For this homework, we basically used jumpbox (original VM) directly. It is because we don't run any heavy machine learning task on VM. In the Future, especially for final project, it is highly recommended to spin up a separate VM and mount the object storage (bucket) on the separate VM. 
+### Section 2.2 Create object storage and mount bucket on Jumpbox (follow to Lab2 steps)
 Creat a object storage using ibm UI
 download s3fs, bulid and install library
 ```
@@ -43,7 +44,7 @@ In the IBM Cloud Object storage, go to Service Credentials, New Credential (be s
 #    "access_key_id": "somekey",
 #    "secret_access_key": "somesecretkey"
 #  },
-Substitue your values for <Access_Key_ID> and <Secret_Access_Key> in the below command.
+# Substitue your values for <Access_Key_ID> and <Secret_Access_Key> in the below command.
 echo "<Access_Key_ID>:<Secret_Access_Key>" > $HOME/.cos_creds
 chmod 600 $HOME/.cos_creds
 ```
@@ -53,7 +54,6 @@ I will not disclose my bucket name here for security reasons.
 sudo mkdir -m 777 /mnt/mybucket
 sudo s3fs bucketname /mnt/mybucket -o passwd_file=$HOME/.cos_creds -o sigv2 -o use_path_request_style -o url=https://s3.us-east.objectstorage.softlayer.net
 ```
-### Section 2.2 Create object storage and mount bucket on Jumpbox (steps follow to Lab2)
 
 ### Section 2.3 create bridge for mqtt borker and ubuntu container
 ```
