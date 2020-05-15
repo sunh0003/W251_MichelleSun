@@ -2,6 +2,7 @@
 ### Section 1.1 Ubuntu Containner and Code
 ```
 docker build -t ubuntu_jtx2 -f Dockerfile.ubuntu_jtx2 .
+xhost +
 docker run --name ubuntu_jtx2 --privileged --network hw03 -ti ubuntu_jtx2 bash
 ```
 ### Section 1.2 MQTT mosquitto broker and mosquitto forwarder
