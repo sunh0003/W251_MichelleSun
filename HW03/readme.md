@@ -28,7 +28,13 @@ ping mosquitto
 mosquitto_sub -h mosquitto -t <some topic>
 # Press Control-P Control-Q to disconnect from the container
 ```
-### Section 1.3 Run face_detector.py code
+### Section 1.4 Run face_detector.py code
+```
+PING test.mosquitto.org
+# 64 bytes from ks2.ral.me (5.196.95.208): icmp_seq=1 ttl=47 time=145 ms
+# Hence we use the public port 5.196.95.208 in the jetson TX2 broker side as well as the ibmCloud broker side
+python3 face_detector.py 5.196.95.208
+```
 ## Section 2 Setup IBM Cloud containers 
 ### Section 2.1 Create VM or use jumpbox
 For this homework, we basically used jumpbox (original VM) directly. It is because we don't run any heavy machine learning task on VM. In the Future, especially for final project, it is highly recommended to spin up a separate VM and mount the object storage (bucket) on the separate VM. 
