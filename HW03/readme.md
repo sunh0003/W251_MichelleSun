@@ -1,7 +1,7 @@
 ## Section 1 Setup Jetson TX2 and Webcamera
-## Section 1.1 Ubuntu Containner and Code
+### Section 1.1 Ubuntu Containner and Code
 
-## Section 1.2 MQTT mosquitto broker and mosquitto forwarder
+### Section 1.2 MQTT mosquitto broker and mosquitto forwarder
 Create bridge hw03
 ```
 docker network create --driver bridge hw03
@@ -21,4 +21,5 @@ ping mosquitto
 mosquitto_sub -h mosquitto -t <some topic>
 # Press Control-P Control-Q to disconnect from the container
 ```
+### Section 1.3 Run facedetector.py code
 ## Section 2 Setup IBM Cloud containers 
