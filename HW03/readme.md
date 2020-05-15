@@ -1,15 +1,18 @@
 ## Section 1 Setup Jetson TX2 and Webcamera
-### Section 1.1 Ubuntu Containner and Code
+### Section 1.1 Setup Network Bridge
+Create bridge hw03
+```
+docker network create --driver bridge hw03
+```
+### Section 1.2 Ubuntu Containner and Code
+The Dockerfile is called Dockerfile.ubuntu_jtx2. Use Dockerfile to create an image and run the image to create docker with privilege to use the webcamera, on the network of hw03.
 ```
 docker build -t ubuntu_jtx2 -f Dockerfile.ubuntu_jtx2 .
 xhost +
 docker run -e DISPLAY=$DISPLAY --privileged -v /tmp:/tmp --name ubuntu_jtx2 --privileged --network hw03 -ti ubuntu_jtx2 bash
 ```
-### Section 1.2 MQTT mosquitto broker and mosquitto forwarder
-Create bridge hw03
-```
-docker network create --driver bridge hw03
-```
+### Section 1.3 MQTT mosquitto broker and mosquitto forwarder
+
 Create alpine linux mosquitto container, with port 1883, on the network hw03, install mosquitto package
 ```
 docker run --name mosquitto --network hw03 -p 1883:1883 -ti alpine sh
