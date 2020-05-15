@@ -4,6 +4,7 @@
 docker build -t ubuntu_jtx2 -f Dockerfile.ubuntu_jtx2 .
 xhost +
 docker run --name ubuntu_jtx2 --privileged --network hw03 -ti ubuntu_jtx2 bash
+docker run -e DISPLAY=$DISPLAY --privileged -v /tmp:/tmp --name ubuntu_jtx2 --privileged --network hw03 -ti ubuntu_jtx2 bash
 ```
 ### Section 1.2 MQTT mosquitto broker and mosquitto forwarder
 Create bridge hw03
