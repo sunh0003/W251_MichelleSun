@@ -85,10 +85,11 @@ docker build -t cloud_ubuntu -f Dockerfile.cloud_ubuntu .
 docker run --name subscriber --network hw03 -v "/mnt/mybucket":/HW03-faces -ti cloud_ubuntu bash
 ```
  
-### Section 2.6 run face_saver_1.py code
-Get into the cloud ubuntu container (container name: subscriber), and run the face_saver_1.py. This code will receive the cropped image from the jetson edge devices and save the image in the bucker on the ibmcloud. 
+### Section 2.6 Run face_saver_1.py code
+Get into the cloud ubuntu container (container name: subscriber), and run the face_saver_1.py. This code will receive the cropped image from the jetson edge devices and save the image in the bucker on the ibmcloud. At the same time, we print out image shape and image name. 
 ```
 docker attach subscriver
 python3 face_saver_1.py
 ```
 
+### Section 2.7 Coupld of sample images are attached in this repo
