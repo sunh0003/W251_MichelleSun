@@ -1,3 +1,4 @@
+## Below is the overall architecture design
 ![HW03 Overall architecture design](https://github.com/sunh0003/W251_MichelleSun/blob/master/HW03/hw03%20architecture.png)
 ## Section 1 Setup Jetson TX2 and Webcamera
 ### Section 1.1 Setup Network Bridge
@@ -93,5 +94,5 @@ docker attach subscriver
 python3 face_saver_1.py
 ```
 
-### Section 2.7 Coupld of sample images are attached in this repo
+### Section 2.7 Sample images (face-12) are attach in this repo
 ![Final Output Example: 12th image taken from the jetson](https://github.com/sunh0003/W251_MichelleSun/blob/master/HW03/face-12.png)
