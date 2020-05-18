@@ -28,15 +28,12 @@ ping mosquitto
 mosquitto_sub -h mosquitto -t face_detect/test
 # Press Control-P Control-Q to disconnect from the container
 ```
-### Section 1.4 Run face_detector.py code
-Get inside the Jetson TX2 ubuntu container (ubuntu_jtx2), then run face_detector.py code with the public broker port number.
-Inside the Jetson TX2 ubunto container, it should have two files (1) face_detector.py (2) haarcascade_frontalface_default.xml
+### Section 1.4 Run face_detector_1.py code
+Get inside the Jetson TX2 ubuntu container (contain name: ubuntu_jtx2), then run face_detector_1.py code.
+Inside the Jetson TX2 ubunto container, it should have two files (1) face_detector_1.py (2) haarcascade_frontalface_default.xml. Here we used a public port which is from test.mosquitto.org (5.196.95.208) in the jetson TX2 broker side as well as the ibmCloud broker side. This port number is written in the python code. 
 ```
-PING test.mosquitto.org
-# 64 bytes from ks2.ral.me (5.196.95.208): icmp_seq=1 ttl=47 time=145 ms
-# Hence we use the public port 5.196.95.208 in the jetson TX2 broker side as well as the ibmCloud broker side
 docker attach ubuntu_tx2
-python3 face_detector.py 5.196.95.208
+python3 face_detector_1.py
 ```
 ## Section 2 Setup IBM Cloud containers 
 ### Section 2.1 Create VM or use jumpbox
