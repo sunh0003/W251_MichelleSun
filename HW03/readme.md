@@ -30,7 +30,7 @@ mosquitto_sub -h mosquitto -t face_detect/test
 ```
 ### Section 1.4 Run face_detector_1.py code
 Get inside the Jetson TX2 ubuntu container (contain name: ubuntu_jtx2), then run face_detector_1.py code.
-Inside the Jetson TX2 ubunto container, it should have two files (1) face_detector_1.py (2) haarcascade_frontalface_default.xml. Here we used a public port which is from test.mosquitto.org (5.196.95.208) in the jetson TX2 broker side as well as the ibmCloud broker side. This port number is written in the python code. 
+Inside the Jetson TX2 ubunto container, it should have two files (1) face_detector_1.py (2) haarcascade_frontalface_default.xml. Here we used a public port which is from test.mosquitto.org (5.196.95.208) in the jetson TX2 broker side as well as the ibmCloud broker side. This port number is written in the python code. This code uses openCV to capture the face images and turn it into grey scale and crop the face out. 
 ```
 docker attach ubuntu_jtx2
 python3 face_detector_1.py
