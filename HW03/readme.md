@@ -25,7 +25,7 @@ Create alpine linux forwarder container, on the network he03, install mosquitto-
 docker run --name forwarder --network hw03 -ti alpine sh
 apk update && apk add mosquitto-clients
 ping mosquitto
-mosquitto_sub -h mosquitto -t <some topic>
+mosquitto_sub -h mosquitto -t face_detect/test
 # Press Control-P Control-Q to disconnect from the container
 ```
 ### Section 1.4 Run face_detector.py code
