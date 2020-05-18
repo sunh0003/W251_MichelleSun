@@ -94,5 +94,5 @@ docker attach subscriber
 python3 face_saver_1.py
 ```
 
-### Section 2.7 Sample images (face-12) are attach in this repo
+### Section 2.7 Sample image (face-12) is attach in this repo
 ![Final Output Example: 12th image taken from the jetson](https://github.com/sunh0003/W251_MichelleSun/blob/master/HW03/face-12.png)
