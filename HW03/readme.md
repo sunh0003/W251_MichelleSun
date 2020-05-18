@@ -1,4 +1,4 @@
-!HW03 Overall architecture design ()
+!HW03 Overall architecture design (HW03/hw03 architecture.png)
 ## Section 1 Setup Jetson TX2 and Webcamera
 ### Section 1.1 Setup Network Bridge
 Create bridge hw03
