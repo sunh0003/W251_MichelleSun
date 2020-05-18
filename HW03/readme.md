@@ -94,3 +94,4 @@ python3 face_saver_1.py
 ```
 
 ### Section 2.7 Coupld of sample images are attached in this repo
+![Final Output Example: 12th image taken from the jetson](https://github.com/sunh0003/W251_MichelleSun/blob/master/HW03/face-12.png)
