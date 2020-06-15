@@ -1,0 +1,20 @@
+FROM w251/tensorrtlab05:dev-tx2-4.2_b158
+ENV DEBIAN_FRONTEND=noninteractive
+
+#isntall necessary packages
+RUN apt-get update
+RUN apt-get install -y python3-opencv \
+                       python3-pip \
+                       libopencv-dev \
+                       libcanberra-gtk3-module \
+                       vim-tiny \
+                       mosquitto-clients \
+                      python3-pil \
+                      wget \
+                      python3-matplotlib
+
+#install paho mqtt to send messages to broker
+RUN pip3 install paho-mqtt
+RUN pip3 install python3-wget
+
+COPY tensor_face_hw07.py .
