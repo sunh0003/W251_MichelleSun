@@ -32,3 +32,23 @@ mosquitto_sub -h mosquitto -t face_detect/test
 docker attach tensor_face_hw07
 python3 tensor_face_hw07.py
 ```
+
+## step 5: the cloud part is the same as HW03 use below code
+setup mqtt broker container
+```
+docker build -t cloud_broker -f Dockerfile.cloud_broker .
+docker run --name mosquitto_alpine --network hw03 -p 1883:1883 -ti cloud_broker sh 
+```
+setup ubuntu container for image processing
+```
+docker build -t cloud_ubuntu -f Dockerfile.cloud_ubuntu .
+docker run --name subscriber --network hw03 -v "/mnt/mybucket":/HW03-faces -ti cloud_ubuntu bash
+```
+Run face_saver_1.py code
+
+```
+docker attach subscriber
+python3 face_saver_1.py
+```
+
+
