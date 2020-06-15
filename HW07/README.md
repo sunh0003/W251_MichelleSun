@@ -29,6 +29,6 @@ mosquitto_sub -h mosquitto -t face_detect/test
 
 ## step 4: Run python file inside docker
 ```
-docker attach tensor_face_hw7
-python3 tensor_face_hw7.py
+docker attach tensor_face_hw07
+python3 tensor_face_hw07.py
 ```
