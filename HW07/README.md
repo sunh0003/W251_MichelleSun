@@ -1,11 +1,11 @@
-## step 1: 
+## step 1: build network similar to hw03
 
 we already created the network for hw3, i will continue to use this network
 ```
 docker network create --driver bridge hw03
 ```
 
-## step 2:
+## step 2: use Dockerfile to build docker (based on HW05 tensor lab)
 
 ```
 docker build -t tensor_face_hw07 -f Dockerfile_TensorHW07 .
@@ -27,4 +27,8 @@ mosquitto_sub -h mosquitto -t face_detect/test
 # Press Control-P Control-Q to disconnect from the container
 ```
 
-## step 4:
+## step 4: Run python file inside docker
+```
+docker attach tensor_face_hw7
+python3 tensor_face_hw7.py
+```
