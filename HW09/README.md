@@ -1,4 +1,5 @@
 
+## Homework 09 Distributed High Performance Computation with GPUs
 
 1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) <br>
 It took 12 hours with 2 V100 GPU
