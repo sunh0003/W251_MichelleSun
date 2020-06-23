@@ -3,11 +3,11 @@
 
 ![Test Image 1](Eval_BLUE_score_1.png)
 
-!(global_gradient_norm.png)
+![Test Image 2](global_gradient_norm.png)
 
-!(eval_loss.png)
+![Test Image 3](eval_loss.png)
 
-!(learning_rate.png)
+![Test Image 4](learning_rate.png)
 
 
 1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) <br>
