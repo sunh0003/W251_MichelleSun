@@ -13,8 +13,9 @@
 1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) <br>
 It took 12 hours with 2 V100 GPU
 
-2. Do you think your model is fully trained? How can you tell?
+2. Do you think your model is fully trained? How can you tell? <br>
 ![Test Image 1](eval_loss.png)
+
 eval_loss is flattened, but BLUE score is still moving. so maybe approach to the end of training. 
 
 3. Were you overfitting?
