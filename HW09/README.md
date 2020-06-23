@@ -1,7 +1,14 @@
 
 ## Homework 09 Distributed High Performance Computation with GPUs
 
-![Test Image 1](Eval_BLUE_score_2.png)
+![Test Image 1](Eval_BLUE_score_1.png)
+
+!(global_gradient_norm.png)
+
+!(eval_loss.png)
+
+!(learning_rate.png)
+
 
 1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) <br>
 It took 12 hours with 2 V100 GPU
