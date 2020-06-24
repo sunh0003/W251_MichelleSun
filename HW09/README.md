@@ -9,9 +9,9 @@
 
 ![Test Image 4](learning_rate.png)
 
-
-1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) <br>
-It took 12 hours with 2 V100 GPU
+## QUESTIONS
+1. **How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while)** <br>
+It took 24 hours with 2 V100 GPU
 
 2. Do you think your model is fully trained? How can you tell? <br>
 ![Test Image 1](eval_loss.png)
