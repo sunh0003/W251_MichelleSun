@@ -38,6 +38,8 @@ Based on below screenshots, it does not look like there is any betwork bootlenec
 ![Test Image 10](learning_rate.png)
 
 **7. How big was your training set (mb)? How many training lines did it contain?** <br>
+It is around ~700MB for training set. <br>
+There are 4,562,102 lines in the training set.
 
 ![Test Image 11](train_size.png)
 
