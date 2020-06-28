@@ -26,10 +26,12 @@ Based on the graph of train_loss and eval_loss (picture above), the train loss i
 
 **4. Were your GPUs fully utilized?**  <br>
 Yes. can you see from below screenshots that GPUs are fully utilized to 90-100%
+
 ![Test Image 8](GPU_1.png)![Test Image 9](GPU_2.png)
 
 **5. Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck?** <br>
 Based on below screenshots, it does not look like there is any betwork bootleneck.
+
 ![Test Image 8](network.png)![Test Image 9](memory_stats.png)
 
 **6. Take a look at the plot of the learning rate and then check the config file. Can you explan this setting?** <br>
@@ -45,13 +47,17 @@ There are 4,562,102 lines in the training set.
 
 **8. What are the files that a TF checkpoint is comprised of?** <br>
 THe TF checkpoints contains the follow files (1)best_models, (2) checkpoints, (3) tf_events output, and (4) model paths. <br>
+
 ![Test Image 12](checkpoint.png)
 
 **9. How big is your resulting model checkpoint (mb)?** <br>
+The resulting model checkpoints is 853MB+1MB+17MB, and the total is around 900MB in size. <br>
+
 ![Test Image 13](checkpoint.png)
 
 **10. Remember the definition of a "step". How long did an average step take?**<br>
-1.694s
+The average step is around 1.694s <br>
+
 ![Test Image 14](time_per_step.png)
 
 
