@@ -44,6 +44,7 @@ There are 4,562,102 lines in the training set.
 ![Test Image 11](train_size.png)
 
 **8. What are the files that a TF checkpoint is comprised of?** <br>
+THe TF checkpoints contains the follow files (1)best_models, (2) checkpoints, (3) tf_events output, and (4) model paths. <br>
 ![Test Image 12](checkpoint.png)
 
 **9. How big is your resulting model checkpoint (mb)?** <br>
