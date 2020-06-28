@@ -16,7 +16,8 @@
 It took 24 hours with 2 V100 GPU
 
 **2. Do you think your model is fully trained? How can you tell?** <br>
-![Test Image 6](eval_loss.png) ![Test Image 7](train_loss.png)
+![Test Image 6](eval_loss.png) 
+![Test Image 7](train_loss.png)
 
 As we can see that the eval_loss is flattened, but BLUE score is still moving. so we are approaching to the end of training. 
 
