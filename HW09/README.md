@@ -9,7 +9,7 @@
 
 ![Test Image 4](learning_rate.png)
 
-![Test Image 5](train_rate.png)
+![Test Image 5](train_loss.png)
 
 ## QUESTIONS
 **1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while)** <br>
